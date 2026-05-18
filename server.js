@@ -7,7 +7,7 @@ const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
 // Autoriser uniquement votre domaine
 app.use(cors({
-  origin: ['https://clubrh.mabonnefee.com', 'https://mabonnefee.com'],
+  origin: true,
   methods: ['POST'],
   allowedHeaders: ['Content-Type']
 }));
